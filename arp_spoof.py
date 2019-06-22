@@ -42,3 +42,6 @@ except KeyboardInterrupt:
     print ('\r ending spoof... resetting ARP tables       ')
     restore(target_ip, gateway_ip)
     restore(gateway_ip, target_ip)
+
+except IndexError:
+    print ('Cannot complete the spoof with the provided IP address ')
